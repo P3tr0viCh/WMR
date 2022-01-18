@@ -9,7 +9,7 @@ uses
   DateUtils, Utils_KAndM, Dialogs, StdCtrls, Classes, Utils_Date, Utils_Str,
   Utils_Misc, Utils_Files, Utils_FileIni, Buttons, AboutFrm, ComCtrls, ExtCtrls,
   DB, ADODB, ImgList, OleServer, WMRAdd, Printers, Math,
-  Utils_Graf, Menus, Utils_Base64, Utils_Log, HTMLHelpViewer;
+  Utils_Graf, Menus, Utils_Base64, Utils_Log, HTMLHelpViewer, System.ImageList;
 
 type
   TMain = class(TForm)
@@ -293,7 +293,7 @@ begin
   pnlUserName.Caption := CurrentUserName;
   WriteToLog('user: ' + CurrentUserName);
   SetWorkMode;
-  SaveWeightStep('1', rsServerChangeUser);
+  // SaveWeightStep('1', rsServerChangeUser);
 end;
 
 procedure TMain.SetWorkMode;
