@@ -1,7 +1,5 @@
-
-//{$DEFINE NOCOMPORT}  // Не включать COM-порт
-
 {$IFDEF DEBUG} // Режим отладки
+  {$DEFINE NOCOMPORT}  // Не включать COM-порт
 
   {$DEFINE FORCECLOSE} // Не выводить сообщение с подтверждением при закрытии
 

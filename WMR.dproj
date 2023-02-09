@@ -3,7 +3,7 @@
         <ProjectGuid>{A591BE2D-51D0-4719-953D-0E89C2CDB36E}</ProjectGuid>
         <MainSource>WMR.dpr</MainSource>
         <Base>True</Base>
-        <Config Condition="'$(Config)'==''">Release</Config>
+        <Config Condition="'$(Config)'==''">Debug</Config>
         <TargetedPlatforms>1</TargetedPlatforms>
         <AppType>Application</AppType>
         <FrameworkType>VCL</FrameworkType>
@@ -41,22 +41,21 @@
         <Base>true</Base>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Base)'!=''">
-        <VerInfo_Release>2</VerInfo_Release>
-        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+        <DCC_UnitSearchPath>..\!Components;..\!Components\AsyncPro_ComPort;$(DCC_UnitSearchPath)</DCC_UnitSearchPath>
+        <VerInfo_Release>3</VerInfo_Release>
         <DCC_K>false</DCC_K>
         <DCC_Namespace>Vcl;Vcl.Imaging;Vcl.Touch;Vcl.Samples;Vcl.Shell;System;Xml;Data;Datasnap;Web;Soap;Winapi;Data.Win;System.Win;$(DCC_Namespace)</DCC_Namespace>
-        <DCC_ExeOutput>C:\Docs\Projects.exe\Delphi\WMR</DCC_ExeOutput>
-        <DCC_BplOutput>C:\Docs\Projects.exe\Delphi\WMR\Bpl</DCC_BplOutput>
-        <DCC_DcuOutput>C:\Docs\Projects.exe\Delphi\WMR\DCU</DCC_DcuOutput>
+        <DCC_ExeOutput>..\..\Projects.exe\Delphi\WMR\</DCC_ExeOutput>
+        <DCC_BplOutput>..\..\Projects.exe\Delphi\WMR\Bpl</DCC_BplOutput>
+        <DCC_DcuOutput>..\..\Projects.exe\Delphi\WMR\DCU</DCC_DcuOutput>
         <DCC_SYMBOL_PLATFORM>false</DCC_SYMBOL_PLATFORM>
         <DCC_SymbolReferenceInfo>1</DCC_SymbolReferenceInfo>
         <DCC_F>false</DCC_F>
         <DCC_UsePackage>vcl;rtl;dbrtl;adortl;vcldb;vclx;bdertl;vcldbx;ibxpress;dsnap;cds;bdecds;qrpt;teeui;teedb;tee;dss;teeqr;visualclx;visualdbclx;dsnapcrba;dsnapcon;VclSmp;vclshlctrls;dclOffice2k;Package;$(DCC_UsePackage)</DCC_UsePackage>
         <DCC_ImageBase>00400000</DCC_ImageBase>
-        <DCC_DcpOutput>C:\Docs\Projects.exe\Delphi\WMR\Bpl</DCC_DcpOutput>
+        <DCC_DcpOutput>..\..\Projects.exe\Delphi\WMR\Bpl</DCC_DcpOutput>
         <VerInfo_MinorVer>2</VerInfo_MinorVer>
-        <VerInfo_Keys>CompanyName=П3тр0виЧъ;FileDescription=Весовое программное обеспечение (тип МР);FileVersion=3.2.2.1;InternalName=WMR;LegalCopyright=© П3тр0виЧъ;LegalTrademarks=П3тр0виЧъ;OriginalFilename=WMR.exe;ProductName=Весовое программное обеспечение (тип МР);ProductVersion=3.0</VerInfo_Keys>
-        <Icon_MainIcon>WMR_Icon.ico</Icon_MainIcon>
+        <VerInfo_Keys>CompanyName=П3тр0виЧъ;FileDescription=Весовое программное обеспечение (тип МР);FileVersion=3.2.3.0;InternalName=WMR;LegalCopyright=© П3тр0виЧъ;LegalTrademarks=П3тр0виЧъ;OriginalFilename=WMR.exe;ProductName=Весовое программное обеспечение (тип МР);ProductVersion=3.0</VerInfo_Keys>
         <VerInfo_Locale>1049</VerInfo_Locale>
         <DCC_N>true</DCC_N>
         <Manifest_File>$(BDS)\bin\default_app.manifest</Manifest_File>
@@ -64,11 +63,10 @@
         <VerInfo_MajorVer>3</VerInfo_MajorVer>
         <DCC_E>false</DCC_E>
         <SanitizedProjectName>WMR</SanitizedProjectName>
-        <VerInfo_Build>1</VerInfo_Build>
     </PropertyGroup>
     <Import Project="WMR.optset" Condition="'$(Base_Win32)'!='' And Exists('WMR.optset')"/>
     <PropertyGroup Condition="'$(Base_Win32)'!=''">
-        <VerInfo_Keys>CompanyName=П3тр0виЧъ;FileDescription=Весовое программное обеспечение (тип МР);FileVersion=3.2.2.0;InternalName=WMR;LegalCopyright=© П3тр0виЧъ;LegalTrademarks=П3тр0виЧъ;OriginalFilename=WMR.exe;ProductName=Весовое программное обеспечение (тип МР);ProductVersion=3.0;ProgramID=com.embarcadero.$(MSBuildProjectName)</VerInfo_Keys>
+        <VerInfo_Keys>CompanyName=П3тр0виЧъ;FileDescription=Весовое программное обеспечение (тип МР);FileVersion=3.2.3.0;InternalName=WMR;LegalCopyright=© П3тр0виЧъ;LegalTrademarks=П3тр0виЧъ;OriginalFilename=WMR.exe;ProductName=Весовое программное обеспечение (тип МР);ProductVersion=3.0;ProgramID=com.embarcadero.$(MSBuildProjectName)</VerInfo_Keys>
         <VerInfo_MinorVer>2</VerInfo_MinorVer>
         <DCC_K>false</DCC_K>
         <DCC_DcuOutput>C:\Docs\Projects.exe\Delphi\WMR\DCU</DCC_DcuOutput>
@@ -84,7 +82,6 @@
         <DCC_ExeOutput>C:\Docs\Projects.exe\Delphi\WMR</DCC_ExeOutput>
         <DCC_BplOutput>C:\Docs\Projects.exe\Delphi\WMR\Bpl</DCC_BplOutput>
         <UWP_DelphiLogo150>$(BDS)\bin\Artwork\Windows\UWP\delphi_UwpDefault_150.png</UWP_DelphiLogo150>
-        <VerInfo_Build>0</VerInfo_Build>
         <CfgDependentOn>WMR.optset</CfgDependentOn>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_1)'!=''">
@@ -94,6 +91,7 @@
         <DCC_Define>RELEASE;$(DCC_Define)</DCC_Define>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_1_Win32)'!=''">
+        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
         <DCC_K>false</DCC_K>
         <DCC_SYMBOL_PLATFORM>false</DCC_SYMBOL_PLATFORM>
         <DCC_SymbolReferenceInfo>1</DCC_SymbolReferenceInfo>
@@ -103,7 +101,7 @@
         <DCC_S>false</DCC_S>
         <DCC_E>false</DCC_E>
         <BT_BuildType>Debug</BT_BuildType>
-        <VerInfo_Keys>CompanyName=П3тр0виЧъ;FileDescription=Весовое программное обеспечение (тип МР);FileVersion=3.2.2.1;InternalName=WMR;LegalCopyright=© П3тр0виЧъ;LegalTrademarks=П3тр0виЧъ;OriginalFilename=WMR.exe;ProductName=Весовое программное обеспечение (тип МР);ProductVersion=3.0;ProgramID=com.embarcadero.$(MSBuildProjectName)</VerInfo_Keys>
+        <VerInfo_Keys>CompanyName=П3тр0виЧъ;FileDescription=Весовое программное обеспечение (тип МР);FileVersion=3.2.3.0;InternalName=WMR;LegalCopyright=© П3тр0виЧъ;LegalTrademarks=П3тр0виЧъ;OriginalFilename=WMR.exe;ProductName=Весовое программное обеспечение (тип МР);ProductVersion=3.0;ProgramID=com.embarcadero.$(MSBuildProjectName)</VerInfo_Keys>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_2)'!=''">
         <DCC_Define>DEBUG;$(DCC_Define)</DCC_Define>
@@ -112,7 +110,7 @@
     </PropertyGroup>
     <Import Project="WMR.optset" Condition="'$(Cfg_2_Win32)'!='' And Exists('WMR.optset')"/>
     <PropertyGroup Condition="'$(Cfg_2_Win32)'!=''">
-        <VerInfo_Keys>CompanyName=П3тр0виЧъ;FileDescription=Весовое программное обеспечение (тип МР);FileVersion=3.2.2.1;InternalName=WMR;LegalCopyright=© П3тр0виЧъ;LegalTrademarks=П3тр0виЧъ;OriginalFilename=WMR.exe;ProductName=Весовое программное обеспечение (тип МР);ProductVersion=3.0;ProgramID=com.embarcadero.$(MSBuildProjectName)</VerInfo_Keys>
+        <VerInfo_Keys>CompanyName=П3тр0виЧъ;FileDescription=Весовое программное обеспечение (тип МР);FileVersion=3.2.3.0;InternalName=WMR;LegalCopyright=© П3тр0виЧъ;LegalTrademarks=П3тр0виЧъ;OriginalFilename=WMR.exe;ProductName=Весовое программное обеспечение (тип МР);ProductVersion=3.0;ProgramID=com.embarcadero.$(MSBuildProjectName)</VerInfo_Keys>
         <VerInfo_MinorVer>2</VerInfo_MinorVer>
         <DCC_K>false</DCC_K>
         <DCC_SYMBOL_PLATFORM>false</DCC_SYMBOL_PLATFORM>
@@ -223,10 +221,8 @@
                     <VersionInfoKeys Name="CFBundleExecutable"/>
                 </VersionInfoKeys>
                 <Excluded_Packages>
-                    <Excluded_Packages Name="$(BDSBIN)\bcboffice2k250.bpl">Embarcadero C++Builder Office 2000 Servers Package</Excluded_Packages>
-                    <Excluded_Packages Name="$(BDSBIN)\bcbofficexp250.bpl">Embarcadero C++Builder Office XP Servers Package</Excluded_Packages>
-                    <Excluded_Packages Name="$(BDSBIN)\dcloffice2k250.bpl">Microsoft Office 2000 Sample Automation Server Wrapper Components</Excluded_Packages>
-                    <Excluded_Packages Name="$(BDSBIN)\dclofficexp250.bpl">Microsoft Office XP Sample Automation Server Wrapper Components</Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\dcloffice2k220.bpl">Microsoft Office 2000 Sample Automation Server Wrapper Components</Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\dclofficexp220.bpl">Microsoft Office XP Sample Automation Server Wrapper Components</Excluded_Packages>
                 </Excluded_Packages>
             </Delphi.Personality>
             <Platforms>
